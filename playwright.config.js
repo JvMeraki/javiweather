@@ -2,9 +2,8 @@
 const config = {
 	webServer: {
 		command: 'npm run build && npm run preview',
-		port: 4173
-	},
-	testDir: 'tests'
+		port: 3000
+	}
 };
 
 export default config;

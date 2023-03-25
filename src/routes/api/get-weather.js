@@ -8,7 +8,7 @@ const FETCH_OPTIONS = {
 
 export async function get(event) {
 	const { searchParams } = event.url;
-	const query = searchParams.get('q') ?? 'Buenos Aires';
+	const query = searchParams.get('q') ?? 'Bogotá';
 
 	const response = await fetch(
 		`https://weatherapi-com.p.rapidapi.com/current.json?q=${query}`,

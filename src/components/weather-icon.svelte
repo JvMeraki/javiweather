@@ -7,7 +7,7 @@
 
 <style>
 	img {
-		width: 100px;
+		width: 50px;
 		height: auto;
 	}
 </style>

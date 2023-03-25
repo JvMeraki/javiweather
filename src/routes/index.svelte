@@ -39,7 +39,7 @@
 
 	h3 {
 		font-weight: 700;
-		font-size: 55px;
+		font-size: 30px;
 		transform: rotate(-90deg);
 		text-align: right;
 		position: absolute;
@@ -47,8 +47,8 @@
 		background: linear-gradient(0deg, rgba(158,158,158,1) 0%, rgba(196,196,196,1) 35%, rgba(228,228,228,1) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		top: 20px;
-		right: 90px;
+		top: 30px;
+		right: 60px;
 		transform-origin: top right;
 		white-space: nowrap;
 		width: max-content;

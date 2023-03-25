@@ -18,12 +18,12 @@
 
 <style>
 	section {
-		padding: 25px;
+		padding: 40px;
 	}
 
 	h1 {
-		font-weight: 300;
-		color: #333;
+		font-weight: 400;
+		color: #bbb3b3;
 		text-transform: uppercase;
 		padding: 16px 0 0 0;
 	}
@@ -31,16 +31,21 @@
 	h2 {
 		font-weight: 300;
 		font-size: 120px;
-		color: #333;
+		color: #858282;
 		text-transform: uppercase;
 		padding: 0;
 	}
 
 	h3 {
 		font-weight: 700;
+		font-size: 55px;
 		transform: rotate(-90deg);
 		position: absolute;
-		top: 65px;
-		right: -20px;
+		background: rgb(158,158,158);
+		background: linear-gradient(0deg, rgba(158,158,158,1) 0%, rgba(196,196,196,1) 35%, rgba(228,228,228,1) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		top: 130px;
+		right: -60px;
 	}
 </style>

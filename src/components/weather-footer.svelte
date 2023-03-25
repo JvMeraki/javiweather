@@ -1,23 +1,31 @@
-<footer>
-	<div>
-		<span> 33% </span>
-		<strong> Humidity </strong>
-	</div>
+<script>
+	import { getWeatherFrom } from '../services/weather.js';
+	const weatherContent = getWeatherFrom();
+</script>
 
-	<div>
-		<span> 12 km/h </span>
-		<strong> Windspeed </strong>
-	</div>
 
-	<div>
-		<span> 12° </span>
-		<strong> Feels like </strong>
-	</div>
-</footer>
+{#await weatherContent then weather}
+	<footer>
+		<div>
+			<span> {weather.humidity} %</span>
+			<strong> Humidity </strong>
+		</div>
+
+		<div>
+			<span> {weather.windSpeed} km/h </span>
+			<strong> Windspeed </strong>
+		</div>
+
+		<div>
+			<span> {weather.feelsLike}°</span>
+			<strong> Feels like </strong>
+		</div>
+	</footer>
+{/await}
 
 <style>
 	footer {
-		border: 2px solid #000;
+		border: 2px solid #fff;
 		padding: 12px 32px;
 		width: 80%;
 		margin: 0 auto;
@@ -32,13 +40,14 @@
 	}
 
 	span {
+		color: #bcbcbc;
 		display: block;
 		font-weight: 600;
 		font-size: 14px;
 	}
 
 	strong {
-		color: #444;
+		color: #d4d4d4;
 		font-size: 14px;
 		font-weight: 500;
 	}
